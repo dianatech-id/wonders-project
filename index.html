@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonders of the World</title>
+    <style>
+      body {
+        background: linear-gradient(
+          181.2deg,
+          rgb(181, 239, 249) 10.5%,
+          rgb(254, 254, 254) 86.8%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(89, 15, 133);
+        font-size: 40px;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border: 1px solid rgb(168, 165, 165);
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        color: #5f5dbd;
+      }
+      h3 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+        color: rgb(58, 59, 59);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      .image {
+        padding: 20px 0;
+        border-radius: 30px;
+      }
+      .info {
+        border-radius: 10px;
+      }
+      .text {
+        line-height: 2;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: 20px 0 10px;
+        color: rgb(58, 59, 59);
+      }
+      hr {
+        border: 0.5px solid rgb(21, 233, 222);
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: rgb(58, 59, 59);
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        color: rgb(58, 59, 59);
+        background: white;
+        border: 1px solid rgb(21, 233, 222);
+        font-size: 15px;
+        padding: 15px 30px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgb(168, 165, 165);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: white;
+        background: rgb(21, 233, 222);
+        cursor: pointer;
+      }
+      .name {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      strong {
+        color: rgb(21, 233, 222);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Seven Wonders of the World</h1>
+      <h2>Know these beautiful places</h2>
+      <img
+        src="https://tuproyectoya.com/wp-content/uploads/2021/01/Las-7-Maravillas-del-Mundo-Construidas-por-el-Hombre-Modernas.jpg.webp"
+        alt="Wonders of the World"
+        class="image"
+        width="800"
+      />
+      <hr />
+      <p class="text">
+        Various lists of the Wonders of the World have been compiled from
+        antiquity to the present day, in order to catalogue the world's most
+        spectacular natural features and human-built structures. In 2001, an
+        initiative was started by the
+        <em>Swiss corporation New7Wonders Foundation</em>
+        to choose the New 7 Wonders of the World from a selection of 200
+        existing monuments through online votes.
+      </p>
+      <hr />
+      <a
+        href="https://en.wikipedia.org/wiki/Wonders_of_the_World"
+        target="_blank"
+      >
+        Learn more on Wikipedia
+      </a>
+      <br />
+      <h3>🌐 List and Details 🌐</h3>
+      <img
+        src="https://isteam.wsimg.com/ip/dba00ce9-8b52-4081-b1f1-01ee95ea3993/ols/835_original/:/rs=w:600,h:600"
+        alt="Wonders"
+        class="info"
+        width="450"
+      />
+      <br />
+      <button>Visit now</button>
+      <br />
+      <p class="name">Coded by <strong>Diana Muñoz</strong></p>
+    </div>
+    <script>
+      function visitNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank you " +
+            name +
+            ", in your email address will receive the information of the places " +
+            "😎"
+        );
+      }
+      let visitButton = document.querySelector("button");
+      visitButton.addEventListener("click", visitNow);
+    </script>
+  </body>
+</html>
